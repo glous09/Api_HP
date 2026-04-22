@@ -1,6 +1,9 @@
-fetch('data.json')
+fetch('https://hp-api.onrender.com/api/characters')
     .then(response => response.json()) // Convierte la respuesta a objeto JS
     .then(data => {
+
+        console.log(data);
+        
 
         const listaContenedor = document.getElementById('lista-nombres');
         data.forEach(personaje => {
