@@ -13,8 +13,25 @@
 <body>
     <div class="container my-5">
         <h1 class="text-center mb-5">Personajes de Harry Potter</h1>
-        <div id="lista-personajes" class="row ">
-            <!-- contenedor de cards -->
+        
+        <!-- Filtros -->
+        <div class="row mb-4 g-3">
+            <div class="col-md-8">
+                <input type="text" id="busqueda" class="form-control" placeholder="Buscar por nombre, especie o actor...">
+            </div>
+            <div class="col-md-4">
+                <select id="filtro-casa" class="form-select">
+                    <option value="">Todas las casas</option>
+                    <option value="Gryffindor">Gryffindor</option>
+                    <option value="Slytherin">Slytherin</option>
+                    <option value="Hufflepuff">Hufflepuff</option>
+                    <option value="Ravenclaw">Ravenclaw</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="lista-personajes" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Las cards se cargarán aquí dinámicamente -->
         </div>
     </div>
 

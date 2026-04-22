@@ -1,5 +1,11 @@
 body {
-    background-color: #f8f9fa;
+    min-height: 100vh;
+    background-color: #000000;
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(212, 175, 55, 0.28), transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(212, 175, 55, 0.18), transparent 50%),
+        linear-gradient(135deg, #000000 0%, #071a3a 35%, #3b0a57 70%, #b8860b 100%);
+    background-attachment: fixed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -9,6 +15,7 @@ body {
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .character-card:hover {
@@ -53,6 +60,20 @@ body {
 }
 
 h1 {
-    color: #2c3e50;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    color: #f6d17a;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.65);
+}
+
+/* Estilos para filtros */
+#busqueda, #filtro-casa {
+    border-radius: 10px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#busqueda:focus, #filtro-casa:focus {
+    border-color: #740001; /* Color Gryffindor por defecto al enfocar */
+    box-shadow: 0 0 8px rgba(116, 0, 1, 0.2);
+    outline: none;
 }
