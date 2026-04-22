@@ -1,0 +1,59 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.character-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.character-img {
+    height: 350px;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+/* Colores por casa */
+.gryffindor {
+    border-left: 8px solid #740001;
+}
+
+.slytherin {
+    border-left: 8px solid #1a472a;
+}
+
+.hufflepuff {
+    border-left: 8px solid #ecb939;
+}
+
+.ravenclaw {
+    border-left: 8px solid #0e1a40;
+}
+
+.unknown {
+    border-left: 8px solid #bebebe;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #333 !important;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+h1 {
+    color: #2c3e50;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
