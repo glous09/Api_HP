@@ -6,7 +6,7 @@ body {
 .character-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
@@ -22,7 +22,6 @@ body {
     background-color: #eee;
 }
 
-/* Colores por casa */
 .gryffindor {
     border-left: 8px solid #740001;
 }
