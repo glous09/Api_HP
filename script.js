@@ -1,4 +1,5 @@
 const API_URL = 'https://hp-api.onrender.com/api/characters';
+const DEFAULT_IMAGE = 'assets/img/default-image.png';
 
 const listaContenedor = document.getElementById('lista-personajes');
 // cambié el json local al consumo directo de la url
@@ -23,7 +24,7 @@ function renderCharacters(characters) {
         const characterImage = image || DEFAULT_IMAGE;
         const houseClass = house ? house.toLowerCase() : 'unknown';
        
-        // Usando template string en vez del dome que estaba utilizando
+        // Usando template string en vez del dom que estaba utilizando
         const cardHtml = `
             <div class="col">
                 <div class="card h-100 character-card ${houseClass}">
